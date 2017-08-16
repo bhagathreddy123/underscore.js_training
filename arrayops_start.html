@@ -15,7 +15,10 @@
 			container.innerHTML = container.innerHTML + result;
 			result = "<p>" + _.without(array2,"A","B","I","O","U") + "</p>";
 			container.innerHTML = container.innerHTML + result;
-			
+			// use union() function to combine two arrays
+			var result = "<p> Union(): " + _.union(array1,array2) + "</p>";
+			container.innerHTML = container.innerHTML + result;
+
 
 		});
 	</script>
