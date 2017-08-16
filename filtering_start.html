@@ -10,6 +10,9 @@
 	function getPassingStudents(elem) {
 		return ((elem.midterm_score + elem.final_score) / 2 > 65 );
 	}
+	function checkImprovement(item){
+		return item.final_score > item.midterm_score;
+	}
 	window.addEventListener("load",function(e){
 		// use the filter() function to narrow down the list
 		// var result = _.filter(students,getPassingStudents);
@@ -17,7 +20,11 @@
 		// var result = _.where(students,{"school": "zphs", "grade": 10} )
 		// the reject () function is opposite of filter()
 
-		var result = _.reject(students, getPassingStudents);
+		// var result = _.reject(students, getPassingStudents);
+		// use the every function to ensure that all of a set of a creteria have been met 
+		alert(_.every(students,checkImprovement));
+		// use the some() function to see if any elements pass the createria have been met
+		alert(_.some(students,checkImprovement));
 		// using each to populate the list
 		_.each(result,function(elem,index,list) {
  		var container = document.getElementById("container");
