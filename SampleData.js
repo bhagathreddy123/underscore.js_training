@@ -18,7 +18,7 @@ var students = [
 	"school": "abc",
 	"grade": 5,
 
-	"midterm_score": 75,
+	"midterm_score": 98,
 	"final_score": 85
 },
 {
@@ -29,7 +29,7 @@ var students = [
 	"school": "xys",
 	"grade": 10,
 
-	"midterm_score": 76,
+	"midterm_score": 69,
 	"final_score": 85
 },
 {
@@ -40,7 +40,7 @@ var students = [
 	"school": "zphs",
 	"grade": 10,
 
-	"midterm_score": 76,
+	"midterm_score": 81,
 	"final_score": 85
 },
 {
