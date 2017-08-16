@@ -38,7 +38,7 @@ var students = [
 	"lastname": "chowan",
 
 	"school": "zphs",
-	"grade": 9,
+	"grade": 10,
 
 	"midterm_score": 76,
 	"final_score": 85
@@ -49,7 +49,7 @@ var students = [
 	"lastname": "reddy",
 
 	"school": "zphs",
-	"grade": 9,
+	"grade": 10,
 
 	"midterm_score": 34,
 	"final_score": 24
