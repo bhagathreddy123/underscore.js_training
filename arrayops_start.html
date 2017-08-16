@@ -21,7 +21,9 @@
 			// use intersection() function to include common values in both the arrays
 			var result = "<p> Intersection(): " + _.intersection(array1,array3) + "</p>";
 			container.innerHTML = container.innerHTML + result;
-
+			// use difference() function to show  the values that are not present in other array 
+			var result = "<p> difference():" +_.difference(array1,array3) + "</p>";
+			container.innerHTML = container.innerHTML + result;
 
 		});
 	</script>
