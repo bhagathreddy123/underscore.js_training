@@ -14,9 +14,12 @@
 		// use the filter() function to narrow down the list
 		// var result = _.filter(students,getPassingStudents);
 		// use where function to select specific students
-		var result = _.where(students,{"school": "zphs", "grade": 10} )
+		// var result = _.where(students,{"school": "zphs", "grade": 10} )
+		// the reject () function is opposite of filter()
+
+		var result = _.reject(students, getPassingStudents);
 		// using each to populate the list
-_.each(result,function(elem,index,list) {
+		_.each(result,function(elem,index,list) {
  		var container = document.getElementById("container");
 		var student = "<p>" + elem.firstname + "" + elem.lastname + ",  Grade: " + elem.grade + "</p>";
 		container.innerHTML = container.innerHTML + student;
