@@ -17,6 +17,17 @@ var elem = _.find(students,searchStudents);
 var container = document.getElementById("container");
 var student = "<p>" + elem.firstname + "" + elem.lastname + ", Grade: " + elem.grade + "</p>"
 container.innerHTML = container.innerHTML + student;
+// test the findWhere function 
+ elem = _.findWhere(students, {school : "zphs" , grade: 9 });
+
+var container = document.getElementById("container");
+var student = "<p>" + elem.firstname + "" + elem.lastname + ", Grade: " + elem.grade  + "</p>";
+container.innerHTML = container.innerHTML + student;
+// contains() searches a list of values for a value
+// pluck() retrives the values for a given property name
+var grades = _.pluck(students, "final_score");
+if (_.contains(grades,100))
+	alert("Found a perfect final score");
 		});
 	</script>
 </head>

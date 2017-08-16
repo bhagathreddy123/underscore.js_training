@@ -8,7 +8,7 @@ var students = [
 	"grade": 12,
 
 	"midterm_score": 76,
-	"final_score": 85
+	"final_score": 100
 },
 {
 	"firstname": "bhagath",
