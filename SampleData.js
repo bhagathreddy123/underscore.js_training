@@ -42,6 +42,17 @@ var students = [
 
 	"midterm_score": 76,
 	"final_score": 85
+},
+{
+	"firstname": "smaran",
+
+	"lastname": "reddy",
+
+	"school": "zphs",
+	"grade": 9,
+
+	"midterm_score": 34,
+	"final_score": 24
 }
 
 ]
