@@ -3,6 +3,8 @@ var students = [
 	"firstname": "woody",
 
 	"lastname": "Johnson",
+
+	"school": "Adarsha",
 	"grade": 12,
 
 	"midterm_score": 76,
@@ -12,6 +14,8 @@ var students = [
 	"firstname": "bhagath",
 
 	"lastname": "reddy",
+
+	"school": "abc",
 	"grade": 5,
 
 	"midterm_score": 75,
@@ -21,6 +25,8 @@ var students = [
 	"firstname": "nathan",
 
 	"lastname": "astile",
+
+	"school": "xys",
 	"grade": 10,
 
 	"midterm_score": 76,
@@ -30,6 +36,8 @@ var students = [
 	"firstname": "rajesh",
 
 	"lastname": "chowan",
+
+	"school": "zphs",
 	"grade": 9,
 
 	"midterm_score": 76,
