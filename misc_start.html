@@ -5,12 +5,12 @@
 	<script type="text/javascript" src="underscore.js"></script>
 	<script type="text/javascript" src="SampleData.js"></script>
 	<script type="text/javascript">
-	function log(value) {
-		var container = document.getElementById("container");
-		var data = "<p>" + value + "</p>";
-		container.innerHTML = container.innerHTML + data;
-	}
-	window.addEventListener("load", function(e){
+		function log(value) {
+			var container = document.getElementById("container");
+			var data = "<p>" + value + "</p>";
+			container.innerHTML = container.innerHTML + data;
+		}
+		window.addEventListener("load", function(e){
 		// create a unique ID with and without a prefix
 		log("Using uniqueId to generate an ID for use in the DOM");
 		var sID = _.uniqueId();
@@ -18,9 +18,13 @@
 
 		var sID = _.uniqueId("prefix_");
 		log("ID with prefix: " +sID);
-
-	});
-	</script>
+// generate a random number
+var rand1 = _.random(25); // one argument means between 0 and value
+log("random number up to 25: " + rand1);
+var rand2 = _.random(100,200);
+log("random number within 100 and 200: " + rand2);
+});
+</script>
 </head>
 <body>
 	<h1> Underscore Miscellanous Functions</h1>
