@@ -27,6 +27,11 @@
 			_.defaults(newStudent,defaultValues);
 			container.innerHTML += "<p>" + newStudent.firstname + " " + newStudent.lastname + ", Midterm: " + newStudent.midterm_score + ", Final: " + newStudent.final_score + " ,Grade:" + newStudent.grade + "</p>";
 
+			// clone() makes a shallow copy of the object (in other words properties that   are arrays or objects will be copied by reference, and not duplicated  themselves )
+container.innerHTML += "<h2>  Cloning an existing Object </h2>";
+var copyStudent = _.clone(students[0]);
+container.innerHTML += "<p>" + copyStudent.firstname + "" + copyStudent.lastname + ", Midterm: " + copyStudent.midterm_score + ", Final: " + copyStudent.final_score + "<p>";
+
 		});
 
 	</script>
