@@ -32,9 +32,11 @@
 
 		}
 
-var templateString = "<div><span>Name: <%= lastname %> </span> </div>";
+		var templateString = "<div><span>Name: <%= lastname %> </span> </div>";
+		var templateString2 = "<div><span>Name: <% print(lastname.toUpperCase()) %> </span> </div>";
 		window.addEventListener("load",function(e){
-			var compiledTemplate = _.template(templateString);
+			// var compiledTemplate = _.template(templateString);
+			var compiledTemplate = _.template(templateString2);
 			var result = compiledTemplate ({
 				lastname: "Hossainfeffer"
 			});
